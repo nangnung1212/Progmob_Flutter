@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:progmob_flutter/main.dart';
 
 class Pertemuan1 extends StatefulWidget {
   const Pertemuan1({super.key, required this.title});
@@ -60,6 +61,15 @@ class _Pertemuan1State extends State<Pertemuan1> {
                   color: Colors.white
                 ),
               ),
+            ),
+
+            ElevatedButton(
+              onPressed: () {Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MyHomePage(title: "Halo Kembali")),
+              );
+              },
+              child: Text("Logout"),
+
             )
           ],
         ),
